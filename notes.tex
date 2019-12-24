@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in, top=1.5in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{Real Analysis}
+\rhead{Notes}
+
+\begin{document}
+
+\section*{Chapter 1: Limit Points and Sequences}
+
+\begin{itemize}
+  \item \textbf{Point}: element of the real numbers
+  \item \textbf{Point Set}: collection of points
+  \item \textbf{Linearly Ordered}: if a, b, c $\in$ M, then
+  \begin{itemize}
+    \item if a $<$ b and b $<$ c, then a $<$ c and
+    \item only one of the following is true
+    \begin{itemize}
+      \item a $<$ b
+      \item b $<$ a or
+      \item a = b
+    \end{itemize}
+  \end{itemize}
+  \item \mathbb{R} is linearly ordered
+  \item If p is a point, there is a point less than p and greater than p
+  \item If p and q are two points, there is a point between then (e.g. (p+q)/2)
+  \begin{itemize}
+    \item 'Two points' implies that they are not the same point
+  \end{itemize}
+  \item If a $<$ b and c is a point, then a+c $<$ b+c
+  \item If a $<$ b and c $>$ 0, then a $\cdot$ c $<$ b $\cdot$ c. If c $<$ 0 then a $\cdot$ c $>$ b $\cdot$ c
+  \item If x is a point, then x is an integer, or $\exists$ an integer n s.t. n $<$ x $<$ n + 1
+  \item \textbf{Open Interval}: If O is an open interval, then O is the set containing all points between two points a and b. Denoted (a,b).
+  \item \textbf{Closed Interval}: If C is an open interval, then C is the set containing all points between two points a and b, and a and b themselves. Denoted [a,b].
+  \item \textbf{Limit Point}: If M is a point set and p is a point, then p is a limit point of M if \textit{every} open interval containing p contains a point in M different from p.
+\end{itemize}
+
+\subsection*{Problem 1}
+\textbf{Show that if M is the open interval (a,b), and p is in M, then p is a limit point of M.}
+\begin{proof}
+To show that p is a limit point of M, we need to show that if we have an open interval containing p, we also have a different point p in the interval that is also in M. If we construct a new open interval (c,d) that contains p, we need to show that the new interval also contains another point from M. We can choose this point to be (p+x)/2, where x = min(b,d). We know that this point is also in M, because it is greater than p (which is in M), but less that the highest point in M. Therefore we have found a point in the same interval that is not p.
+\end{proof}
+
+\subsection*{Problem 2}
+\textbf{Show that if M is the closed interval [a,b] and p is not in M, then p is not a limit point of M.}
+\begin{proof}
+Since p is not in M, it is not between or equal to a and b, and therefore any interval that contains p is not within M.
+\end{proof}
+
+\subsection*{Problem 3}
+\textbf{Show that if M is a point set having a limit point, then M contains 2 points. Must M countain 3 points? 4 points?}
+\begin{proof}
+
+\end{proof}
+
+\end{document}
